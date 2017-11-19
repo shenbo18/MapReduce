@@ -19,7 +19,7 @@ the first word represents the first feature of the document vector. For document
 third component of the document vector is 0.5.)
 3. c1.txt contains k initial cluster centroids. These centroids were chosen by selecting
 k = 10 random points from the input data.
-4. c2.txt contains initial cluster centroids which are as far apart as possible. (You can
+4. c2.txt contains initial cluster centroids which are as far apart as possible. (We can
 do this by choosing 1st centroid c1 randomly, and then finding the point c2 that is
 farthest from c1, then selecting c3 which is farthest from c1 and c2, and so on).
 Use Euclidean distance (ie, the L2 norm) as the distance measure. Set number of iterations
@@ -28,8 +28,7 @@ to 20 and number of clusters to 10. Use points in c1.txt for initialization.
 ### Implement Details
 #### Job Chaining
 We need to run a sequence of Hadoop jobs where the output of one job will be the input for
-the next one. There are multiple ways to do this and you are free to use any method you
-are comfortable with. One simple way to handle a such a multistage job is to configure the
+the next one. One simple way to handle a such a multistage job is to configure the
 output path of the first job to be the input path of the second and so on.
 
 #### Cluster Initialization strategies
