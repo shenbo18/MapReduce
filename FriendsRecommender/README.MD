@@ -17,7 +17,7 @@ Let us use a simple algorithm such that, for each user U, the algorithm recommen
 mutual friends in common with U.
 
 ### Output   
-The output should contain one line per user in the following format:
+The output contains one line per user in the following format:
 <User><TAB><Recommendations>
 where <User> is a unique ID corresponding to a user and <Recommendations> is a comma
 separated list of unique IDs corresponding to the algorithm’s recommendation of people that
